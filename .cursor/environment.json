@@ -1,0 +1,15 @@
+{
+  "name": "MDN Web Docs content",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "fred-server",
+      "command": "bash .cursor/start.sh",
+      "description": "MDN Web Docs local preview server (Fred + Rari). Serves the site at http://localhost:5042/."
+    }
+  ],
+  "ports": [
+    { "name": "fred server", "port": 5042 },
+    { "name": "playground backend", "port": 5043 }
+  ]
+}
